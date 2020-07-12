@@ -1,0 +1,442 @@
+body {
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p {
+    margin: 0;
+}
+h2 {
+    font-size: 4rem;
+    color: #042a38;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 2.5rem;
+}
+.centrar {
+    text-align: center;
+}
+.contenedor {
+    width: 97%;
+    margin: 0 auto;
+}
+@media (min-width: 576px) {
+    .contenedor {
+        width: 93%;
+    }
+}
+@media (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+@media (min-width: 992px) {
+    .contenedor {
+        max-width: 120rem;
+    }
+}
+@media (min-width: 1200px) {
+    .contenedor {
+        max-width: 155rem;
+    }
+}
+.section {
+    padding: 4rem 0
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*** Pagina ***/ 
+.barra {
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.3);
+    width: 100%;
+    position: unset;
+}
+@media (min-width: 768px) {
+    .barra {
+        position: fixed;
+    }
+}
+.menu_principal {
+    padding: 2.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .menu_principal {
+        flex-direction: row;
+    }
+}
+.menu_principal li {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+}
+@media (min-width: 768px) {
+    .menu_principal li {
+        padding: 0;
+    }
+}
+.menu_principal li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    transition: all .3s ease-in;
+}
+.menu_principal li ul {
+    display: none;
+    list-style-type: none;
+	position:absolute;
+	top:100%;
+	left:0;
+    padding:0;
+}
+.menu_principal li:hover > ul {
+    display: block;
+    padding: 1rem 0;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.3);
+}
+.menu_principal li ul li {
+    padding: 1rem;
+}
+.menu_principal li a:hover {
+    color: #4b2637;
+}
+.header_sitio {
+    background-image: url(../img/Ilustraciones/DSCN0712.jpg);
+    padding:  0 0 3rem 0;
+}
+@media (min-width: 768px) {
+    .header_sitio {
+    margin-top: 6rem;
+    }
+}
+.contenido_header {
+    background-color: #f6f4e8;
+    padding: 7rem;
+    border-radius: 0 0 1rem 1rem;
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.7);
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.7);
+}
+@media (min-width: 768px) {
+    .contenido_header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+.contenedor_titulo p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+.titulo {
+    font-size: 8rem;
+    font-family: 'Anton', sans-serif;
+}
+@media (min-width: 768px) {
+    .titulo {
+    font-size: 12rem;
+    }
+}
+.contenedor_boton {
+    display: flex;
+    align-items: center;
+}
+.boton {
+    background-color: white;
+    color: #4b2637;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    border: 2px solid #4b2637;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all .4s ease-in;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+}
+.boton:hover {
+    color: #fff;
+    background-color: #042a38;
+    border: 2px solid #042a38;
+}
+@media (min-width: 768px) {
+    .contenedor_descripcion {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.imagen_artista {
+    background-image: url(../img/Sketckbook/DSCN0739.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 30rem;
+}
+@media (min-width: 768px) {
+    .imagen_artista {
+        height: auto;
+    }
+}
+.contenido_descripcion {
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.descripcion_texto {
+    max-width: 60rem;
+    text-align: justify;
+}
+/*** Habilidades ***/
+.conetnedor_habilidades {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3rem;
+}
+@media (min-width: 768px) {
+    .conetnedor_habilidades {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.habilidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+    transition: all .3s ease-in;
+}
+.habilidad:hover {
+    transform: scale(1.1);
+}
+.habilidad i {
+    font-size: 5rem;
+    color: #5c0000;
+    transition: all .3s ease-in;
+}
+.habilidad:hover > i {
+    color: #042a38;
+}
+/*** Formacion ***/ 
+.formacion {
+    background-image: url(../img/Ilustraciones/DSCN0708.jpg);
+}
+.contenedor_formacion {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+}
+@media (min-width: 768px) {
+    .contenedor_formacion {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.padre {
+    background-color: rgba(0,0,0,.7);
+}
+.formacion_rubro {
+    padding: 3rem 0;
+    color: white;
+    text-align: center;
+}
+.formacion h2 {
+    color: white;
+}
+.formacion_rubro i {
+    font-size: 3rem;
+}
+.formacion_rubro h3 {
+    padding: 2rem 0;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .formacion_rubro h3 {
+        text-align: left;
+    }
+}
+/** Fotos **/
+.produccion p {
+    padding-bottom: 3rem;
+}
+.contenedor_ilustraciones,
+.contenedor_grafico,
+.contenedor_sketchbook {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+@media (min-width: 768px) {
+    .contenedor_ilustraciones,
+    .contenedor_grafico,
+    .contenedor_sketchbook {
+    grid-template-columns: repeat(3,1fr);
+}
+}
+.contenedor_imagen_principal {
+    height: 40rem;
+}
+.contenedor_imagen {
+    height: 100%;
+}
+/* Ilustraciones */
+#dibujo01 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Ilustraciones/DSCN0697.jpg);
+}
+#dibujo02 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Ilustraciones/DSCN0699.jpg);
+}
+#dibujo03 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Ilustraciones/DSCN0702.jpg);
+}
+#dibujo04 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Ilustraciones/DSCN0708.jpg);
+}
+#dibujo05 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Ilustraciones/DSCN0717.jpg);
+}
+#dibujo06 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Ilustraciones/DSCN0833.jpg);
+}
+/* Sketch book */
+#sketch01 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Sketckbook/DSCN0745.jpg);
+}
+#sketch03 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Sketckbook/DSCN0741.jpg);
+}
+#sketch02 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Sketckbook/DSCN0743.jpg);
+}
+#sketch04 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Sketckbook/DSCN0808.jpg);
+}
+#sketch05 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Sketckbook/DSCN0818.jpg);
+}
+#sketch06 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/Sketckbook/DSCN0766.jpg);
+}
+/* Graficos */ 
+#grafico01 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/DiseñoGráfico/Bellas\ artes.jpg);
+}
+#grafico02 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/DiseñoGráfico/Blues\ flyer.jpg);
+}
+#grafico03 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/DiseñoGráfico/Bateria.jpg);
+}
+#grafico04 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/DiseñoGráfico/Portada\ 2.jpg);
+}
+#grafico05 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/DiseñoGráfico/Morbido.jpg);
+}
+#grafico06 {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/DiseñoGráfico/Antropologia.jpg);
+}
+#map {
+    margin: 5rem 0 0 0;
+    width: 100%;
+    height: 30vh;
+}
+.contacto {
+    padding: 2rem;
+    border-bottom: 2px solid black;
+}
+.formulario_informacion {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+}
+@media (min-width: 768px) {
+    .formulario_informacion {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.seccion_formulario{
+    width: 100%; 
+    padding: 1rem 0;
+}
+.campo {
+    width: 100%;
+    padding: .7rem .5rem;
+    border: 2px solid #5c0000;
+}
+.informacion_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.informacion_contacto a {
+    text-decoration: none;
+    font-size: 5rem;
+    color: #5c0000;
+}
+.copy {
+    padding: 1rem  2rem;
+    text-align: center;
+    background-color: #042a38;
+    color: white;
+}
